@@ -2,6 +2,7 @@
   "name": "earthquake-sim",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Web-based 3D earthquake emergency training simulator built with Three.js.",
   "homepage": "https://furkankoykiran.github.io/EarthquakeSim/",
   "repository": {
@@ -21,7 +22,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "vite build && node scripts/verify-build.js",
+    "verify": "node scripts/verify-build.js",
     "preview": "vite preview --host"
   },
   "dependencies": {

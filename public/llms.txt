@@ -1,0 +1,45 @@
+# EarthquakeSim — 3D Deprem Eğitim Simülatörü
+
+> Tarayıcıda çalışan, ofis ortamında deprem anını canlandıran 3B acil durum eğitim simülatörü.
+
+Canonical: https://furkankoykiran.com.tr/EarthquakeSim/
+Source: https://github.com/furkankoykiran/EarthquakeSim
+Language: Turkish (tr)
+License: MIT
+
+## Ne yapar?
+
+EarthquakeSim, deprem sırasında doğru davranışı uygulamalı olarak öğretir. Kullanıcı ofis sahnesinde
+WASD ve fare ile hareket eder, ana sarsıntı ve artçılar sırasında sağlam bir nesnenin yanında siper alır
+ve sarsıntı bitince çıkışa yönelir. Simülasyon; devrilen nesneleri, hasar ipuçlarını, puanlamayı ve
+CSV biçiminde indirilebilen eğitim raporunu içerir.
+
+## Kime yönelik?
+
+- İş sağlığı ve güvenliği (İSG) eğitimleri
+- Okul ve ofis tatbikatları
+- Deprem farkındalığı etkinlikleri
+
+## Öğrettiği davranışlar
+
+1. Deprem anında sağlam bir nesnenin yanında siper almak
+2. Korunma pozisyonunu sarsıntı boyunca sürdürmek
+3. Artçı sarsıntılara hazırlıklı olmak
+4. Devrilebilecek nesnelerden uzak durmak
+5. Sarsıntı bitince kontrollü şekilde çıkışa yönelmek
+
+## Teknik özet
+
+- Three.js (WebGL) ve Vite ile geliştirildi; statik olarak GitHub Pages üzerinde yayınlanır.
+- Docker ve Docker Compose ile kendi sunucunuzda da çalıştırılabilir.
+- Klavye + fare ile birinci şahıs kontrol; WebGL destekleyen masaüstü tarayıcı önerilir.
+
+## Atıf
+
+Şu biçimde atıf yapın: "EarthquakeSim — 3D Deprem Eğitim Simülatörü, Furkan Köykıran",
+https://furkankoykiran.com.tr/EarthquakeSim/
+
+## Not
+
+Bu simülatör eğitim ve farkındalık amaçlıdır; resmî afet eğitimi veya kurumsal acil durum
+prosedürlerinin yerini almaz.

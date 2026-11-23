@@ -1,0 +1,25 @@
+# ai.txt - how AI systems may use EarthquakeSim
+# Standards: https://contentsignals.org/ and https://llmstxt.org/
+#
+# Owner: Furkan Köykıran
+# Contact: furkankoykiran@gmail.com
+# Canonical: https://furkankoykiran.com.tr/EarthquakeSim/
+#
+# Summary for language models:
+#   https://furkankoykiran.com.tr/EarthquakeSim/llms.txt
+# Source code:
+#   https://github.com/furkankoykiran/EarthquakeSim
+# Crawling policy:
+#   https://furkankoykiran.com.tr/EarthquakeSim/robots.txt
+#
+# Content signals: search=yes, ai-input=yes, ai-train=yes
+# Search indexing, retrieval, citation and training are all permitted;
+# attribution is appreciated.
+#
+# Preferred citation:
+#   "EarthquakeSim — 3D Deprem Eğitim Simülatörü", Furkan Köykıran,
+#   https://furkankoykiran.com.tr/EarthquakeSim/
+#
+# Licensing: the code is MIT. The 3D models and HDRI environment maps in
+# public/assets are third-party assets; check their original licences before
+# redistributing them.
