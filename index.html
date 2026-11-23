@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
-  <title>3D Deprem Eğitim Simülatörü</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Deprem Eğitim Simülatörü | EarthquakeSim</title>
+  <meta name="description"
+    content="Tarayıcıda çalışan 3B deprem acil durum eğitim simülatörü: ana sarsıntı ve artçılar, nesne devrilmesi, siper alma etkileşimi, puanlama ve CSV rapor. Three.js ve Vite ile geliştirildi." />
+  <meta name="author" content="Furkan Köykıran" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://furkankoykiran.com.tr/EarthquakeSim/" />
+
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="apple-touch-icon" href="./favicon.svg" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EarthquakeSim" />
+  <meta property="og:url" content="https://furkankoykiran.com.tr/EarthquakeSim/" />
+  <meta property="og:title" content="3D Deprem Eğitim Simülatörü | EarthquakeSim" />
+  <meta property="og:description"
+    content="Ofis ortamında deprem anını tarayıcıda canlandıran 3B eğitim simülatörü. Siper al, artçılara hazırlan, puanını ve CSV raporunu gör." />
+  <meta property="og:image" content="https://furkankoykiran.com.tr/EarthquakeSim/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="EarthquakeSim 3D deprem eğitim simülatörü" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="3D Deprem Eğitim Simülatörü | EarthquakeSim" />
+  <meta name="twitter:description"
+    content="Ofis ortamında deprem anını tarayıcıda canlandıran 3B eğitim simülatörü. Siper al, artçılara hazırlan, puanını gör." />
+  <meta name="twitter:image" content="https://furkankoykiran.com.tr/EarthquakeSim/og-image.png" />
+
+  <link rel="alternate" hreflang="tr" href="https://furkankoykiran.com.tr/EarthquakeSim/" />
+  <link rel="alternate" hreflang="x-default" href="https://furkankoykiran.com.tr/EarthquakeSim/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://furkankoykiran.com.tr/EarthquakeSim/#app",
+          "name": "EarthquakeSim",
+          "alternateName": "3D Deprem Eğitim Simülatörü",
+          "url": "https://furkankoykiran.com.tr/EarthquakeSim/",
+          "description": "Tarayıcıda çalışan 3B deprem acil durum eğitim simülatörü; ana sarsıntı ve artçılar, nesne devrilmesi, siper alma etkileşimi, puanlama ve CSV rapor.",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Any",
+          "browserRequirements": "Requires WebGL and JavaScript",
+          "isAccessibleForFree": true,
+          "inLanguage": "tr",
+          "codeRepository": "https://github.com/furkankoykiran/EarthquakeSim",
+          "license": "https://opensource.org/licenses/MIT",
+          "author": {
+            "@type": "Person",
+            "name": "Furkan Köykıran",
+            "url": "https://furkankoykiran.com.tr/"
+          }
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://furkankoykiran.com.tr/EarthquakeSim/#learning",
+          "name": "Deprem anında güvenli davranış eğitimi",
+          "description": "Ofis ortamında deprem sırasında siper alma, artçı sarsıntılara hazırlanma ve güvenli tahliye davranışlarını uygulamalı olarak öğreten simülasyon.",
+          "learningResourceType": "Simulation",
+          "educationalLevel": "Beginner",
+          "inLanguage": "tr",
+          "isAccessibleForFree": true,
+          "teaches": [
+            "Deprem anında sağlam bir nesnenin yanında siper almak",
+            "Korunma pozisyonunu sarsıntı boyunca sürdürmek",
+            "Artçı sarsıntılara hazırlıklı olmak",
+            "Devrilebilecek nesnelerden uzak durmak",
+            "Sarsıntı bitince kontrollü şekilde çıkışa yönelmek"
+          ]
+        }
+      ]
+    }
+  </script>
+
   <link type="text/css" rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
+  <noscript>
+    <div
+      style="max-width:44rem;margin:4rem auto;padding:0 1.5rem;font-family:system-ui,sans-serif;line-height:1.6;color:#e2e8f0;background:#0f172a">
+      <h1>3D Deprem Eğitim Simülatörü</h1>
+      <p>Bu simülasyon WebGL ve JavaScript gerektirir. Tarayıcınızda JavaScript kapalı görünüyor.</p>
+      <p>Projenin kaynak koduna ve ekran görüntülerine
+        <a style="color:#4caf50" href="https://github.com/furkankoykiran/EarthquakeSim">GitHub üzerinden</a>
+        ulaşabilirsiniz.</p>
+    </div>
+  </noscript>
   <div id="ui-container">
     <!-- Crosshair / Nişangah -->
     <div id="crosshair" style="
@@ -304,15 +394,6 @@
       </div>
     </div>
   </div>
-
-  <script type="importmap">
-      {
-        "imports": {
-          "three": "../build/three.module.js",
-          "three/addons/": "./jsm/"
-        }
-      }
-    </script>
 
   <script type="module" src="./main.js"></script>
 
